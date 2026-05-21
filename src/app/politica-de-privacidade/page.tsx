@@ -17,17 +17,17 @@ export default function PoliticaDePrivacidade() {
 
           <section>
             <h2 className="font-semibold text-gray-800 mb-1">3. Armazenamento</h2>
-            <p>Suas informações são armazenadas em ambiente seguro e utilizadas somente pela equipe comercial da Kleon Acessórios.</p>
+            <p>Suas informações são armazenadas em ambiente seguro e utilizadas somente pela equipe comercial da Somerauto.</p>
           </section>
 
           <section>
             <h2 className="font-semibold text-gray-800 mb-1">4. Seus direitos</h2>
-            <p>Você pode solicitar a exclusão dos seus dados a qualquer momento pelo WhatsApp <a href="https://wa.me/5519971598819" className="underline hover:text-gray-900">(19) 97159-8819</a>.</p>
+            <p>Você pode solicitar a exclusão dos seus dados a qualquer momento pelo WhatsApp <a href="https://wa.me/5519991962607" className="underline hover:text-gray-900">(19) 99196-2607</a>.</p>
           </section>
 
           <section>
             <h2 className="font-semibold text-gray-800 mb-1">5. Contato</h2>
-            <p>Dúvidas sobre esta política? Fale conosco pelo WhatsApp <a href="https://wa.me/5519971598819" className="underline hover:text-gray-900">(19) 97159-8819</a>.</p>
+            <p>Dúvidas sobre esta política? Fale conosco pelo WhatsApp <a href="https://wa.me/5519991962607" className="underline hover:text-gray-900">(19) 99196-2607</a>.</p>
           </section>
         </div>
 
