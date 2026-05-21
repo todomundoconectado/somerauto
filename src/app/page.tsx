@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-50 flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-md flex flex-col items-center gap-8">
-        <Image src="/logo.png" alt="Somerauto" width={220} height={90} priority className="object-contain" />
+        <Image src="/logo-preto.png" alt="Somerauto" width={280} height={70} priority className="object-contain" />
         <div className="w-full bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
           <Suspense>
             <LeadForm origem="pagina-leads" />
