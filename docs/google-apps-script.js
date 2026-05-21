@@ -179,6 +179,13 @@ function doPost(e) {
       for (let row = 2; row <= lastRow; row++) {
         if (String(sheet.getRange(row, COL_LEAD_ID).getValue()) === data.lead_id) {
           if (data.categoria) sheet.getRange(row, COL_RESPOSTA).setValue(data.categoria)
+          if (data.categoria === 'SIM') {
+            sheet.getRange(row, COL_QUALIFICADO).setValue(true)
+            sheet.getRange(row, COL_COMPROU).setValue(false)
+            sheet.getRange(row, COL_DESQUALIFICADO).setValue(false)
+            _colorirLinha(sheet, row, COR_QUALIFICADO)
+            sheet.getRange(row, COL_STATUS).setValue('Qualificado')
+          }
           break
         }
       }

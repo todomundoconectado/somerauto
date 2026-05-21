@@ -69,6 +69,12 @@ export default function LeadForm({ origem = 'pagina-leads' }: { origem?: string 
   async function selectResposta(option: string) {
     setSaving(true)
     await post({ action: 'update', lead_id: leadId.current, categoria: option })
+    if (option === 'SIM') {
+      if (typeof window !== 'undefined' && (window as any).fbq) {
+        ;(window as any).fbq('trackCustom', 'QualifiedLead', {}, { eventID: leadId.current + '_ql' })
+      }
+      await capi('QualifiedLead')
+    }
     setSaving(false)
     window.location.href = `/obrigado?${new URLSearchParams({ nome, categoria: option }).toString()}`
   }
